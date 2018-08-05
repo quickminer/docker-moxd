@@ -32,5 +32,5 @@ RUN wget https://github.com/mox-project/MoX/releases/download/v1.1.0/ubuntu17-x6
 
 EXPOSE 38080
 EXPOSE 38081
-ENTRYPOINT ["/moxd/ubuntu17-x64-1.0.0.zip/moxd", "--p2p-bind-ip=0.0.0.0", "--p2p-bind-port=38080", "--rpc-bind-ip=0.0.0.0", "--rpc-bind-port=38081", "--non-interactive", "--confirm-external-bind", "--data-dir=/moxdata/.mox"] 
+ENTRYPOINT ["/moxd/ubuntu17-x64-1.0.0/moxd", "--p2p-bind-ip=0.0.0.0", "--p2p-bind-port=38080", "--rpc-bind-ip=0.0.0.0", "--rpc-bind-port=38081", "--non-interactive", "--confirm-external-bind", "--data-dir=/moxdata/.mox"] 
 
