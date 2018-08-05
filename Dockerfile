@@ -27,7 +27,7 @@ RUN wget https://github.com/mox-project/MoX/releases/download/v1.1.0/ubuntu17-x6
 # Generate your wallet via accessing the container and run:
 # docker exec -it moxd /bin/bash
 # cd /moxd/ubuntu17-x64-1.0.0.zip
-# monero-wallet-cli
+# ./mox-wallet-cli --daemon-address=127.0.0.1:38081
 
 
 EXPOSE 38080
