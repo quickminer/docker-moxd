@@ -1,6 +1,6 @@
 # Requires docker 17.05
 
-# Run sample docker run --restart unless-stopped -d --name mox -p 38081:38081 --mount type=bind,source=/media/data01/moxdata,target=/moxdata docker-moxd
+# Run sample docker run --restart unless-stopped -d --name moxd -p 38081:38081 --mount type=bind,source=/media/data01/moxdata,target=/moxdata quickminer/mox
 #FROM ubuntu:16.04
 FROM ubuntu:17.10
 #FROM ubuntu:18.04
@@ -25,7 +25,7 @@ RUN wget https://github.com/mox-project/MoX/releases/download/v1.1.0/ubuntu17-x6
 
 
 # Generate your wallet via accessing the container and run:
-# docker exec -it docker-moxd /bin/bash
+# docker exec -it moxd /bin/bash
 # cd /moxd/ubuntu17-x64-1.0.0.zip
 # monero-wallet-cli
 
